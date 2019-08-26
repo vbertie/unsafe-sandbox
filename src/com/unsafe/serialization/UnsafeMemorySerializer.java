@@ -12,8 +12,8 @@ public class UnsafeMemorySerializer {
     private static final Unsafe u = UnsafeUtil.getUnsafe();
 
     private static final long byteArrayOffset = u.arrayBaseOffset(byte[].class);
-    private static final long longArrayOffset = u.arrayBaseOffset(byte[].class);
-    private static final long doubleArrayOffset = u.arrayBaseOffset(byte[].class);
+    private static final long longArrayOffset = u.arrayBaseOffset(long[].class);
+    private static final long doubleArrayOffset = u.arrayBaseOffset(double[].class);
 
     private static final int SIZE_OF_BOOLEAN = 1;
     private static final int SIZE_OF_INTEGER = 4;

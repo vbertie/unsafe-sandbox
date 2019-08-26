@@ -1,6 +1,5 @@
 package com.unsafe.serialization;
 
-import sun.misc.Unsafe;
 
 import java.util.Arrays;
 
@@ -14,7 +13,7 @@ public class SerializationExample {
                     new long[]{5, 2, 6, 5, 1, 12});
 
     public static void main(String[] args) throws Exception {
-//        performForObject();
+        performForObject();
 //        performForObjects();
     }
 
